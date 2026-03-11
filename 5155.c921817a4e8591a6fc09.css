@@ -1,0 +1,295 @@
+/* StyledDialogIconBack */
+.StyledDialogIconBack {
+	cursor: pointer;
+	display: flex;
+	gap: 8px;
+	background: transparent;
+	border: none;
+}
+@media (max-height: 460px) and (max-width: 320px) {
+	.StyledDialogIconBack {
+		padding: 0;
+	}
+}
+
+/* StyledDialogIcon */
+.StyledDialogIcon {
+	display: none;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+@media (max-width: 540px) {
+	.StyledDialogIcon {
+		display: flex;
+	}
+}
+@media (max-height: 460px) and (max-width: 320px) {
+	.StyledDialogIcon {
+		margin: 32px 0 12px 0;
+	}
+}
+
+/* ErrorImageWrapper */
+.ErrorImageWrapper {
+	flex-shrink: 0;
+	width: 170px;
+	height: 130px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* ErrorImage */
+.ErrorImage {
+	width: 94.4px;
+	height: 94.4px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* DialogContent */
+.DialogContent {
+	padding: 0px 4px 16px 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+	justify-content: flex-start;
+	align-self: stretch;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: thin;
+}
+
+/* ErrorTextWrapper */
+.ErrorTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* StyledErrorText */
+.StyledErrorText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+@media (max-width: 961px) {
+  .StyledErrorText {
+    gap: 8px;
+  }
+}
+
+/* ErrorDescription */
+.ErrorDescription {
+  color: #5E5E5E;
+  text-align: center;
+  font-family: var(--3-body-text-regular-b1-font-family, "Vodafone-Regular", sans-serif);
+  line-height: var(--3-body-text-regular-b1-line-height, 28px);
+  letter-spacing: var(--3-body-text-regular-b1-letter-spacing, 0.48px);
+  font-weight: var(--3-body-text-regular-b1-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.ErrorDescription.dark {
+  color: #F3F3F6;
+}
+@media (max-width: 961px) {
+  .ErrorDescription {
+    font-size: var(--3-body-text-regular-b1-font-size, 19px);
+    line-height: var(--3-body-text-regular-b1-line-height, 26.6px);
+    letter-spacing: var(--3-body-text-regular-b1-letter-spacing, 0.43px);
+  }
+}
+@media (max-width: 841px) {
+  .ErrorDescription {
+    font-size: var(--3-body-text-regular-b1-font-size, 17px);
+    line-height: var(--3-body-text-regular-b1-line-height, 23.8px);
+    letter-spacing: var(--3-body-text-regular-b1-letter-spacing, 0.35px);
+  }
+}
+@media (max-width: 675px) {
+  .ErrorDescription {
+    font-size: var(--3-body-text-regular-b1-font-size, 16px);
+    line-height: var(--3-body-text-regular-b1-line-height, 22.4px);
+    letter-spacing: var(--3-body-text-regular-b1-letter-spacing, 0.31px);
+  }
+}
+
+/* ErrorTitle */
+.ErrorTitle {
+  color: #111111;
+  text-align: center;
+  font-family: var(--2-headings-bold-h4-font-family, "Vodafone-Bold", sans-serif);
+  font-size: var(--2-headings-bold-h4-font-size, 32px);
+  line-height: var(--2-headings-bold-h4-line-height, 40px);
+  font-weight: var(--2-headings-bold-h4-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.ErrorTitle.dark {
+  color: #FFFFFF;
+}
+@media (max-width: 961px) {
+  .ErrorTitle {
+    font-size: var(--2-headings-bold-h4-font-size, 29px);
+    line-height: var(--2-headings-bold-h4-line-height, 36.3px);
+  }
+}
+@media (max-width: 841px) {
+  .ErrorTitle {
+    font-size: var(--2-headings-bold-h4-font-size, 26px);
+    line-height: var(--2-headings-bold-h4-line-height, 36.3px);
+  }
+}
+@media (max-width: 675px) {
+  .ErrorTitle {
+    font-size: var(--2-headings-bold-h4-font-size, 24px);
+    line-height: var(--2-headings-bold-h4-line-height, 30px);
+  }
+}
+
+.Title {
+	color: var(--text-primary, #111111);
+	text-align: left;
+	font-family: var(--2-headings-bold-h5F, "Vodafone-Bold", sans-serif);
+	font-size: var(--2-headings-bold-h4-font-size, 32px);
+	line-height: var(--2-headings-bold-h4-line-height, 40px);
+	font-weight: var(--2-headings-bold-h4-font-weight, 700);
+	position: relative;
+	align-self: stretch;
+}
+
+.Title.dark {
+	color: var(--text-primary, #FFFFFF);
+}
+
+@media (max-width: 1220px) {
+	.Title {
+		font-size: var(--2-headings-bold-h4-font-size, 29px);
+		line-height: var(--2-headings-bold-h4-line-height, 36.3px);
+		font-weight: var(--2-headings-bold-h4-font-weight, 700);
+	}
+}
+
+@media (max-width: 1076px) {
+	.Title {
+		font-size: var(--2-headings-bold-h4-font-size, 26px);
+		line-height: var(--2-headings-bold-h4-line-height, 36.3px);
+		font-weight: var(--2-headings-bold-h4-font-weight, 700);
+	}
+}
+
+@media (max-width: 540px) {
+	.Title {
+		font-size: var(--2-headings-bold-h5-font-size, 20px);
+		line-height: var(--2-headings-bold-h5-line-height, 25px);
+		font-weight: var(--2-headings-bold-h5-font-weight, 700);
+	}
+}
+
+.DialogModal {
+	color: var(--text-secondary, #5E5E5E);
+	text-align: left;
+	font-family: var(--3-body-text-regular-b1-font-family, "Vodafone-Regular", sans-serif);
+	font-size: var(--3-body-text-regular-b1-font-size, 16px);
+	line-height: var(--3-body-text-regular-b1-line-height, 22.4px);
+	letter-spacing: var(--3-body-text-regular-b1-letter-spacing, 0.31px);
+	font-weight: var(--3-body-text-regular-b1-font-weight, 400);
+	position: relative;
+	align-self: stretch;
+}
+
+.DialogModal.dark {
+	color: var(--text-secondary, #FFFFFF);
+}
+
+.ButtonWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	justify-content: flex-start;
+	align-self: stretch;
+	flex-shrink: 0;
+	position: relative;
+	padding-bottom: unset;
+}
+.Top {
+	padding: 8px 0px 8px 0px;
+	display: none;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: flex-start;
+	align-self: stretch;
+	flex-shrink: 0;
+	position: relative;
+}
+
+@media (max-width: 540px) {
+	.Top {
+		display: flex;
+	}
+}
+
+.Rectangle {
+	background: #ACB3B8;
+	border-radius: 10px;
+	opacity: 0.35;
+	flex-shrink: 0;
+	width: 32px;
+	height: 4px;
+	position: relative;
+}
+
+.Text {
+	border-radius: var(--radius-small, 12px);
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: stretch;
+	flex-shrink: 0;
+	position: relative;
+}
+
+.Text2 {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: stretch;
+	flex-shrink: 0;
+	position: relative;
+}
+
+.DialogNeedToAddToUnity {
+	background: #FFFFFF;
+	padding: 0px 24px 40px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	position: relative;
+	box-shadow: var(--glass-focus-box-shadow, 0px 0px 30px 0px rgba(0, 0, 0, 0.25));
+	overflow-y: auto;
+	backdrop-filter: var(--glass-focus-backdrop-filter, blur(7px));
+}
+

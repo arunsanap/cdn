@@ -1,0 +1,73 @@
+.content,
+.content * {
+  box-sizing: border-box;
+}
+.content {
+  padding: var(--screen-margin, 24px) var(--grid-gutter, 24px)
+    var(--screen-margin, 24px) var(--grid-gutter, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-spacer-2, 40px);
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.card {
+  flex-shrink: 0;
+  width: 199px;
+  height: 199px;
+  position: relative;
+  object-fit: cover;
+}
+.feedack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer-spacer-2, 40px);
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.add-your-first-card {
+  color: var(--text-primary, #111111);
+  text-align: center;
+  font-family: var(
+    --2-headings-bold-h3-font-family,
+    'Vodafone-Bold',
+    sans-serif
+  );
+  font-size: var(--2-headings-bold-h3-font-size, 28px);
+  line-height: var(--2-headings-bold-h3-line-height, 35px);
+  font-weight: var(--2-headings-bold-h3-font-weight, 700);
+  position: relative;
+  align-self: stretch;
+}
+.you-currently-don-t-have-any-saved-cards {
+  color: var(--text-secondary, #5e5e5e);
+  text-align: center;
+  font-family: var(
+    --3-body-text-regular-b1-font-family,
+    'Vodafone-Regular',
+    sans-serif
+  );
+  font-size: var(--3-body-text-regular-b1-font-size, 16px);
+  line-height: var(--3-body-text-regular-b1-line-height, 22.4px);
+  letter-spacing: var(--3-body-text-regular-b1-letter-spacing, 0.31px);
+  font-weight: var(--3-body-text-regular-b1-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+

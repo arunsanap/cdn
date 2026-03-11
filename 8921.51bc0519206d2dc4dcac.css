@@ -1,0 +1,113 @@
+.cardform-header,
+.cardform-header * {
+  box-sizing: border-box;
+}
+.cardform-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  @media (max-width: 540px) {
+    gap: 12px;
+  }
+}
+.cardform-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 327px;
+  position: relative;
+}
+
+.add-a-new-card {
+  color: var(--text-primary, #111111);
+  text-align: left;
+  font-family: var(
+    --2-headings-bold-h3-font-family,
+    'Vodafone-Bold',
+    sans-serif
+  );
+  font-size: var(--2-headings-bold-h3-font-size, 28px);
+  line-height: var(--2-headings-bold-h3-line-height, 35px);
+  font-weight: var(--2-headings-bold-h3-font-weight, 700);
+  letter-spacing: var(--H5-Heading---Bold-kerning, 0px);
+  position: relative;
+  align-self: stretch;
+  @media (max-width: 540px) {
+    font-size: var(--2-headings-bold-h3-font-size, 20px);
+    line-height: var(--2-headings-bold-h3-line-height, 24px);
+    font-weight: var(--2-headings-bold-h3-font-weight, 700);
+    letter-spacing: var(--H5-Heading---Bold-kerning, 0px);
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+.we-accept-visa-mastercard-and-amex {
+  color: var(--text-secondary, #5e5e5e);
+  text-align: left;
+  font-family: var(
+    --3-body-text-regular-b2-font-family,
+    'Vodafone-Regular',
+    sans-serif
+  );
+  font-size: var(--3-body-text-regular-b2-font-size, 14px);
+  line-height: var(--3-body-text-regular-b2-line-height, 19.6px);
+  letter-spacing: var(--3-body-text-regular-b2-letter-spacing, 0.23px);
+  font-weight: var(--3-body-text-regular-b2-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.we-accept {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.cardform-icon {
+  border: 0.5px solid lightgrey;
+  border-radius: 6px;
+  padding: 0 4px;
+}
+
+.FooterWrapper {
+  display: none;
+  @media (max-width: 540px) {
+    display: block;
+  }
+}
+
+.cardform-loader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#loading-spinner {
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

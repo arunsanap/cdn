@@ -1,0 +1,123 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/><meta name="google" content="notranslate"/><meta name="robots" content="noindex"><meta name="googlebot" content="noindex"><title>Vodafone Payment Page</title><style>body {
+      margin: 0;
+      background-color: #ffffff;
+    }
+    .dotlottie-canvas-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+    }
+   
+
+    @media (prefers-color-scheme: dark) {
+      .dotlottie-canvas-container {     
+      background-color: #111111;
+    }
+    body {
+      background-color: #111111;
+    }
+
+    }
+    
+
+      .grecaptcha-badge {
+        visibility: hidden;
+      }
+        .canvas-loader {
+          width: 300px;
+          height: 300px;
+        }</style><script>${evinaScript}</script><script>window.API_ROOT = '';
+      window.ENVIRONMENT = 'production';
+      window.BASE_URL = '';
+      window.DATA = ${data};
+      window.TRANSLATIONS = ${translations};
+      
+      window.__cdnAssetPath = function () {
+        return '${cdnAssetPath}';
+      }
+      function loadScript(src, isAsync, onLoad, onerror) {
+  const js = document.createElement("script");
+  js.src = src;
+  js.async = isAsync;
+  js.onerror = function () {
+    handleLoadScriptError(src);
+    console.error("Failed to load script " + src);
+    if(!src.endsWith("pay.js")) {
+      window.__cdnAssetPath = function () {
+        return '/';
+      };
+    }
+    
+    if (onerror && !src.endsWith("pay.js")) {
+      console.error("window.__Retry ");
+      onerror();
+      onLoad();
+    }
+
+  };
+  if (onLoad) {
+    js.onload = onLoad;
+  }
+  document.head.appendChild(js);
+}
+
+window.loadScript = loadScript;
+
+window.loadScriptErrorList = [];
+function handleLoadScriptError(script) {
+  window.loadScriptErrorList.push(script);
+}
+
+      /* eslint-disable prettier/prettier */
+
+(function () {
+  // google pay
+  if (
+    window.DATA &&
+    window.DATA.paymentMethods &&
+    typeof window.DATA.paymentMethods !== 'string'
+  ) {
+    for (var i = 0; i < window.DATA.paymentMethods.length; i++) {
+      if (
+        !document.documentMode &&
+        window.DATA.paymentMethods[i].toLowerCase() === 'googlepay'
+      ) {
+        try {
+          loadScript('https://pay.google.com/gp/p/js/pay.js', false)
+        } catch (e) {
+          console.log('Google Pay script throw error' + e)
+        }
+      }
+    }
+  }
+})();
+
+      
+      
+      function isDarkMode() {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }</script><script>
+function loadMainCss() {
+  var l = document.createElement('link');
+  l.rel = 'stylesheet';
+  l.href = window.__cdnAssetPath() + 'main.e4e4fc6f47afe0f5510a.css';
+  l.onerror = function() {
+    l.href = '/main.e4e4fc6f47afe0f5510a.css';
+    // Optionally, log or handle further fallback here
+  };
+  document.head.appendChild(l);
+}
+</script>
+<script>loadScript(window.__cdnAssetPath() + 'main.6415eef1e5c57d5f0ac9.js', true, loadMainCss, function() { loadScript('/main.6415eef1e5c57d5f0ac9.js'); });</script>
+</head><body style="overflow: hidden"><div id="dotlottie-canvas-container" class="dotlottie-canvas-container"><canvas id="dotlottie-canvas" class="canvas-loader"></canvas></div><script type="module">import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+      DotLottie.setWasmUrl("https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.63.0/dist/dotlottie-player.wasm");
+      new DotLottie({
+        autoplay: true,
+        loop: true,
+        canvas: document.getElementById("dotlottie-canvas"),
+        src: window.__cdnAssetPath() + "images/Animation.dc9e98c05249a751d724.lottie",
+        backgroundColor: isDarkMode() ? '#111111' : '#ffffff',
+      });</script><div id="root"></div></body></html>

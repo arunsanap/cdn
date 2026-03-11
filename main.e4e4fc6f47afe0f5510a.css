@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Vodafone-Bold';
+  src: url(fonts/Vodafone_Bd.827a47cac9ba19e06aaa.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vodafone-Regular';
+  src: url(fonts/Vodafone_Rg.b01a567d0898a0d93af4.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

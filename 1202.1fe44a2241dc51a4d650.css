@@ -1,0 +1,114 @@
+.edit,
+.edit * {
+  box-sizing: border-box;
+}
+.edit {
+  border-style: solid;
+  border-color: var(--border-primary, #dee1e3);
+  border-width: 1px 0px 0px 0px;
+  padding: 16px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  cursor: text;
+}
+.icons-controls-delete-dark {
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  &:focus-visible {
+    outline: 2px solid var(--focus-outline-color, #111111);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+.delete-ic {
+  width: 62.5%;
+  height: 79.17%;
+  position: absolute;
+  right: 18.75%;
+  left: 18.75%;
+  bottom: 10.42%;
+  top: 10.42%;
+  overflow: visible;
+}
+
+.linked {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 159.5px;
+  position: relative;
+}
+
+.input-update-card {
+  color: var(--text-secondary, #5e5e5e);
+  text-align: left;
+  font-family: var(
+    --1-mobile-to-be-deleted-regular-b1-font-family,
+    'Vodafone-Regular',
+    sans-serif
+  );
+  font-size: var(--1-mobile-to-be-deleted-regular-b1-font-size, 14px);
+  line-height: var(--1-mobile-to-be-deleted-regular-b1-line-height, 18px);
+  font-weight: var(--1-mobile-to-be-deleted-regular-b1-font-weight, 400);
+  position: relative;
+}
+
+.input {
+  color: var(--text-secondary, #5e5e5e);
+  text-align: left;
+  font-family: var(
+    --1-mobile-to-be-deleted-regular-b1-font-family,
+    'Vodafone-Regular',
+    sans-serif
+  );
+  font-size: var(--1-mobile-to-be-deleted-regular-b1-font-size, 14px);
+  line-height: var(--1-mobile-to-be-deleted-regular-b1-line-height, 18px);
+  font-weight: var(--1-mobile-to-be-deleted-regular-b1-font-weight, 400);
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.icons-filter-link-and-share-link-insert-edit-dark {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+.update-card-button {
+  color: var(--text-primary, #111111);
+  text-align: left;
+  font-family: var(
+    --1-mobile-to-be-deleted-bold-b1-font-family,
+    'Vodafone-Bold',
+    sans-serif
+  );
+  font-size: var(--1-mobile-to-be-deleted-bold-b1-font-size, 14px);
+  line-height: var(--1-mobile-to-be-deleted-bold-b1-line-height, 18px);
+  font-weight: var(--1-mobile-to-be-deleted-bold-b1-font-weight, 700);
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  &:focus-visible {
+    outline: 2px solid var(--focus-outline-color, #111111);
+    outline-offset: 2px;
+  }
+}
+

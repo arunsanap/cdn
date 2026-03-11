@@ -1,0 +1,57 @@
+.VoucherWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  gap: 20px;
+}
+@media (max-width: 1076px) {
+  .VoucherWrapper {
+    gap: 16px;
+  }
+}
+@media (max-width: 675px) {
+  .VoucherWrapper {
+    gap: 16px;
+  }
+}
+@media (max-height: 460px) and (max-width: 320px) {
+  .VoucherWrapper {
+    display: grid;
+  }
+}
+
+.VoucherTitile {
+  color: #111111;
+  text-align: left;
+  font-family: "Vodafone-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.48px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+@media (max-width: 1076px) {
+  .VoucherTitile {
+    font-size: 17px;
+    line-height: 23.8px;
+    letter-spacing: 0.352px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 540px) {
+  .VoucherTitile {
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.31px;
+    font-weight: 700;
+  }
+}
+.VoucherTitile.dark {
+  color: #FFFFFF;
+}
+
